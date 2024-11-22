@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Class 10 Study Planner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Study Planner (By Tanmay)</h1>
+    <h4><strong>NCERT KO READ KRNE MAT BEITHNA AB, One Shot Lectures deakho and questions practice kro!!</strong></h4>
+    <p>Select a date to view and track your tasks. Stay focused!</p>
+    <div class="date-selector">
+      <label for="date">Choose a Date:</label>
+      <select id="date" onchange="displayTasks()"></select>
+    </div>
+
+    <div id="task-list">
+      <h2>Tasks for <span id="selected-date"></span></h2>
+      <ul id="tasks"></ul>
+    </div>
+
+    <!-- New To-Do List Section -->
+    <div id="to-do-list">
+      <h3>To-Do List</h3>
+      <ul id="to-do-tasks">
+        <!-- Dynamic tasks will be added here -->
+      </ul>
+      <input type="text" id="new-task-input" placeholder="Add a new task..." />
+      <button id="add-task-btn" onclick="addNewTask()">Add Task</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
